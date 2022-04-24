@@ -14,7 +14,6 @@ module mts_toggle_switch(columns = 1) {
 
   difference() {
     cylinder(d = mts_mounting_thread_d, h = mts_mounting_thread_h);
-    cylinder(d = mts_mounting_thread_d - 4 * mts_affix_inset, h = mts_mounting_thread_h);
 
     translate([mts_mounting_thread_d / 2 - mts_affix_inset, -mts_affix_inset / 2, 0])
       cube([mts_affix_inset, mts_affix_inset, mts_mounting_thread_h]);
